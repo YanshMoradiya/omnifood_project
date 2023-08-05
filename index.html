@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Omnifood is an AI-powered food subscription that will make you end healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs." >
+    <title>srk &mdash; Naver cook again!</title>
+    <link rel="stylesheet" href="css/SRK.CSS" />
+    <link rel="stylesheet" href="css/quairy.css">
+    <link rel="icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSExIWFhUWGB0XGBgYGRcaHRcdGxcaGh0VGBsaHSggGBolGxgdITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lHyYtLS0tLS0tLS0tLS0vLS0tLS0tLS0uLS0tLS0tLS0tNS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALsBDQMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAACAAEDBgcFBP/EAEUQAAECBAIHBAUKBAUFAQAAAAECEQADEiEEMQUTIkFRYXEGFDKBQpGhscEWIzM0U4KS0dLxUmJysgckQ2OTg6LC4fBE/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAQFBgMBAgf/xABAEQABAwICBQoCCAUEAwAAAAABAAIDBBEhMQUSQVGREzJhcYGhscHR8CLhFBUzQlNU0vE0UnKiwiNjkuIWJEP/2gAMAwEAAhEDEQA/ANbm4kTxq0ggm7nK3SGlThhxQoEk7Wz6t/SCxOHTJTXLsrLN8+sNhJQnAqmXILDdZgd3UwRRowxlq1xIKfEwz2v3gpye8sUWpsaufTpASp6lr1SvA5Dcg7X8hB4w6hhLtVnvy6wRP3oU6hjU1D7nyfi0NJT3dyq9VhTy6txiTu6aNb6dNWe9ny6xHhDryRMvTluz6QRCvDGYrXAgJN2Oezb4Qc2cMQKEggja2vVu6xHNnqQvVJ8DgcbFnv5mJsXKEkBUuxJpO+zE7+YEETSsSJA1agSc3GV+sRysKZB1iiCBZhnfrEuFkJnJrmXVlm2XSIcNPVNVRM8OeTZc4IimyjiDWmwGztevd1g14kLGpANXhc5W9u6AxazJNMuwIc775b+kSTJCUI1qfGz57znbzMEQST3Zwu9WVPLi7cYY4Y1a9xS9bb2zbg8c7EabkgHXqdQ8KR7crcM44mK7WrIKJaaUMw3lokxUksuLRhvOA99ShVGkKeA2e7HcMT8u2yt01QxFk2puaufSGGMTKTqVZiz2bavv6xnStJzvtCHzGUeNSicyT1iY3RRPOeOwXVZJp9o5kZPWQPC60nDz0SDUZiFWpZJc8XucrQ81SZ5rStA3MTe3SM0aGaOn1U3+c8PmuP8A5A/8Mf8AL/qtVXi0zxq0uCbucrX3QpU0YcUKuTtbPq39Iy+ViFpLpJB5OPdHtRp2fapdbcfc+ccnaKeOa4Hu9VIj0/EeewjqsfRX8YYoVryRS9TDO/7wU8d5ai1OdXPgz8IrWC7XVMicGRkWD298d0Y6WAFYdYIU778snBuM4gywSRc8W8OOStaerhqPs3Andt4HFervICdQxqah9zmz8WgZCO7uV3qsKeXVoMYdJRrfTap33gPl1gMGrXkiZcC43e6OKkoV4YzTrgQEm7HPZt8IObPGIFCQQRtbXK27rEU2eqWvVJ8AIGT5sTfqTE2LlCSK5diS3G2e/oIImlYgSBq1Ak5uMr9ekBKwpknWqIIG4Z3tviXCyEzk1zLqy4WHSIMNPVNVq13SeTZZXgiOdKOINSbAbO169z8YNWJC06kA1eF9zj2taAxcwySEy7Ahzvvlv6RIuQlKNaBttVnvOdvOCIJR7s9d6sqeXF+sCcKSrXuKXrbewu3B7QWDGvfW3py3Z55dBAKnKC9SPA9LNuNs+kERzl942UWpuavVugpWNEkapQJKd4yvf4w2LQJABl2Jsd/vgsPhUzUhavEc7kZFhboIIocPhjIVrFs2Vrm8PipJnmtDMBTe18/jDScSZ51a2AN9nO3V4efOOHNCGIIq2rl8tzcIIpJuIStOpD1ZXycZ38oHCnu7iZ6WTXy/eCXhxLTrg9XivltZ++Bw6e8OV2pyptnxd+EEQd2NeutQ9fNs8uMHild4YI9G5e2cD3k1ai1L0c2y9cFPT3dii9VjVfLgzQRHKxCZadSrxZWyvcX84iwsk4c1rZiKbXvn8DEkvDiYnXF6je2WzYe6I5E44g0LYACrZsXy3vxgibE4YzzWhmyvbKJsTiEzk6tGZvewtEU/EmQdWhiM9q5v0aObpvSUvCFpZKprZG4SDvLewR9xxukdqtFyuc0zIWF7zYBe5WkEYNJE03JqATd7N67RScfppcxRKXQCSc734x4cXiVzFFa1FSjvPuHAcohi9p6BkYu7E9w6llKzSss51WfC3dtPWfIHrulDQ8NE9VOSeGMO8drCdlMTMAVQEghw6gM+QciPiSVkYu82XSKGSU2jaSehcSEY9WksAuRMMpZTUGdiSLh94HGOrP7HYlIJASpg7A3PRwLx8uniaAS4WOXSvttLO8uDWEludtnuyr0KHgY7KNdPEmGxC5agpCilQ3gtEcKPCAcCgJBuFZdF9pPnEmdnUCVtz3jdFunzBiABLu178+EZXHV0Hp2ZhlbN0nNJ9/IxV1Ojg74osDu2fJX1DppzSGVGI37R17x39a0GTiEy06pT1BxbLauL+cRYWSZBrWzEU2vcsfhDYAy56NfU5Ny2QKbMRmLAQUiccQaFsABVs2Li29+MUpBBsVqGuDhcZJYnDmea0MzNe2US4jEpnJ1aHqPGwteIp+IMg6tDEM+1c36NEk7CiSNYl6hxyvbdHi9TYWYMOCleZLhr2y+EAjDFK9cWocq5screcHIlDEAqXYg07Nue9+MAjElStSWpcptmw+NoIixY7w2r9F3e2bflBDEpCNRetqOTkNnwvDYg93ai9WdV8uDNxhxhgU6+9TVtucB+rW4wRBhUd3JK8lWDXgJ2FVOUZiGpVk+dg3vEHh194dK7BNxTb3vDTMWqSTLTTSnJ3e99x5wRS4qcmYmmVdWdgRbfctDYSYJQKZtlEuH2rMBufeDDLwwkDWAkkWY84UuT3gVqNJGyw9b36wRRypKkr1ivo3Jd3sXa3mILFjWsZNwM22c8s2eGTiTMOoIYeF9+z+0FMV3aydqq9+XTrBFJr00av/UppZj4mbPLPe8R4QapzNsDk+1l0doLuobXuXattz5tAy1d5srZpvbn16QRBMkqUvWI+jcHNrBnt5GJcXME0BMq6gXLbNmIzLbyIBWJMs6kBwLPv2r/ABiDSUxODQZoNROyx533dI9aC4gDNfLnBrS5xsBiV49LaZ7tK1bAzi7A3YHeePSKKtRJJJcnMnfEmLxKpi1TFl1KLn8hwAiGNJS0whZbac/e5YqvrXVUl8mjIbunrKUKFFs7Ndl6wJs8EJzSneeZ4DlvjpNMyFus/wDdcaamkqH6kY9B1rj6I0DOxJdIpRvWcvLiekWDH6Lw+BkmY2smGySvJ+ITkwzu/WLfLQAAAAALACwHKM57TYtWJxWrRcJ2EDjdifM7+AisjnkqpbHBgxPV0nPHhbYruelhoINYDWkOAJG3eBkLbNt7C6l7HaI18zWrDoQXv6Ss25gZnyjRY8ei8CmRKRKTkkXPE71eZj2xBqZzNIXbNnV81a0FIKaEM25k9PyyWZds/rq/uf2iNNjMu2f11fRH9ojTYk1v2MXV6KHo3+JqP6vNyz/txofVr7wgMlZ229E/xcgff1joaFlyMfJ+dQNajZUoWUeCnGb894MWfG4ZM2WqWoOlQY/n1GcZvomecFi2XYA0L5g7+mSukfcL3TwloPxsyO227y4LjUxtpaoPIBjkwcDkDv8APivVpnsjNlOqW81HADaHUb/L1RWzG1RWO0nZhM4GZKATNz4VdeB5+uOlNpL7svH19VzrtCZvp/8Aj6HyPZZZ3DQc6UpKilQKVAsQcweEBFws0RbBe3RWkVSFhQelxUnj/wC40VWMRPQnUFydq2zbLe285Rlkdvsvpk4eYxulVr7nIv7Irq+k5RvKN5w7/mFdaJ0iYXclIfgOXQfQ7eO9X7DTkyk0zbKzuCbdQ8QYeSqWquZZAzu+eVhEsvDjEDWElJyYcuvWBRijOOqIAB3jO14oFrk2KQZpCpVwAxbZvnvbjE0yclSNWk/OMzMcxnfLcd8RzJvd9lO0+1f1bukOcMEDXgknxNuvu9sETYQ6p9dZ/C+1lnk7ZiI1SlFesH0b1O/oi5tnluaJZY7z4tmnhvfr0gTiSDqGDeB97Gz+2CIsWsTQBKuRcts282gsPiUS0hEw7YzsTncXHIiAmI7ttJ2qrX9e6Cl4IThrSSCrcOVvhBFHh0rCnnPR/MXD7rGFiwpReQ9LXosH8t7NBDE94+bal7u75cmELXd22Grfafw8ma/CCI5ikFDIbWtusp99+OcBhWS+vz9Gu/VnflDd21fz7v6VLN4tzvz4Q9Peb+Cm38Tv6mygiCldb31Tvns09MmaJMUym1GfpUW6OzQ3ev8AQb+Sp/J2b2PCp7tfx1W/hZvW+cERIUgIZba1jndT7r8cooWnseqYugqUQgtck8j+Xri0aeW0pWIqYlqUs9/CLvyfLdFCi10ZACTKdmA81n9OVJDRA3bierYOI7ulKFCj06MwC58wS0M5cubAAbzby8xFw5waLnJZxrXOcGtFyV2uyWjJa1a6cpASk7KSQKuZB3D2npF779K+1R+JP5xR/kNO+0l+tX6YXyGn/aS/Wr9MVE7YJn6zpe7JaKkdVU0eoyn6zrDE++Cs+nNMIlyVqTMSVsyQCCXNgWHB38oqvYiQnWqmzCBQNl2DlVrPwD/ijlaY0SvDLCFKSpRD2JLB2u7cD6o6OC7ITpstMwKQAtIUASp2Nw9o6tihigI5TB2227Yo8lRUT1TSYrmP7t8r7Seu3AK/9+lfao/En84XfpX2qPxJ/OKP8hZ/2kv1q/TDfIWf9pL/ABK/TET6NS/jdysfptd+X/uC8Xa+YlWLWpJBGxcEEeEbxGjd+lfao/En84yrSmAVImGUsgqDZO1w+8DjHc+Qs/7SX+Jf6Yl1EUDo4w6SwAwNs8lX0dRUsmlLIrknEXtY3dh48Fee/SvtUfiT+cUrt5IQpSJyFJU4pUAQcrgsOTjyER/IWf8AaS/xL/TEc7sVOSkqrQWBLAly12Fs45U7KeGQPbL3LvVyVlTCY3U9unWGFlZey+l0Lw6K1gLTslyAS2RvxDR2O/SvtUfiT+cZVojRqsSvVoUApibkgFm4A3vHb+Qc/wC0l+tX6Y8no6drzrSW22svaTSNW+FpZDrAYXva9uxdbtbo6VPTrULl61IyqG2P4c8+HqjP4tXyEn/aS/xL/THL01oCbhQlUwhQUWcEkA8C4GfwMTKR8TByYk1t3v3ZVukYp5Hcs6Es3437ehcmFCh4sFUK6dncdNmooSVVIAeks75KPPc/KLLiFIKWlNXupsedxGcdntJHDz0rzBsocQfyLGNCRhtSNbVU25mztm5jN18HJS4ZHEefettomqM9ONbnNwPkeHgiwhSkHXtU9q7lvPc7wCErrdT6pzmdmm7W4ZQWq7ztvQ2y3ife+7jD96r+YZvRqfhvby4xCVmhxe02o51UW4M7NziQKRQxbWs381TWvxeAfu389f3Wb1vnC7s/+Yf+eluF2d+WbQRNhAUk6/LdXe/J4CeiYVEyqqN1JYc2APF4kr7zs+Cm/wDE+7lC77qPmqaqd7s73yvxgiPEpQEvJav+W5bfaGwoSoPPap7V2LW4tZ3gUYUyDrCXAsw59YUyT3jbSaW2WPre3WCIJallbLfVOcwyWu1+GUHi9ltRl6VF+jtDnEiYNSAQfC+7Z/aGlq7tZW1Ve25uvWCKSlFD21rP/NU3Di8RYQ1Pr8vRrt1Z2h+6l9e9vG29s26w09XeAydmm9+fSCKpdscU6xLSdgXAGVxmPOqK5Ht0wfnlh3pLfD3vHijT0kepC0dF+Kw2kJeVqXu6bDsw+aUXzsDgKZSpxF5hYdE/mp/UIoZjXtHyBLlolj0UgerM+uIuk5C2MNG09w9hTtBwh85efujvN/IHivXChQoolqwsy7UKM7GqQOKZY9g95MaTLQEgJGQDDyjNtDnW6QSeMxSvU6vhGmxY1/wiOPc334Kl0R8Zmm3vPAY+aUNDwxiuV0sz7Z/XV/c/sEabGZds/rq/uf2CNNixrfsYer0VLoz+JqP6h/klChQorldBZfo8d30glGQTNKfxEpHsIMaeIzLtijV41ahvpUPwj4pjS0KcA8Q8WNf8TY5N7fD91S6J+B80P8ru4/sjjm6ewOvkLl7yHT1Fx7becdKGMQGuLSCMwrh7GvaWuyOBWJQ8dPtNhtVipoGTuOh2vi3lHKMa2Nwe0OG3HivzuWMxvLDsJHA2TRo3Z3GqnISZhJRkSrJxbPqIzmLj2Mn1y1Yfe9QO4BgW9aT64r9KMvCHbj44eiuNAy6tSWfzDvGI81ZcUSkjUPS16Lh+bPdmiVaUUOlta27xPvtxzgUTe77Ktp9q3q39IYYUoOve3ibffd7YoFrksJtPr/u126s7coBSl1sH1Ttls0775M0STB3nw7NPHe/TpC7yANQxdqH3ObP7YIligEgajPfRe3Nng5CJZSDNpr31FjycdGiOWju20raqtb174GZgjOOtBYK3Hlb4QRDhZypiqZt055NllcNBYpZlGmVZJDltq+WZfcBEk/EieNWhwTe+Vujw2HmjDihdyTVs3DZb24QRFMkpSjWJHzjA5k3Odst5gMGnWuZ1yMn2c88meARhjLVri1LlVs9rL3wWJT3hii1NjVbPgz8IIh1yq9X/AKb0s3o5Z55b3htJtJSDKsTm2173aJu8CnU3qajk7N6vKPLNScOlRX6QYU3y4u3GByXoWczplSqjmbnzLwDwKcoKNfa2C/OL3x3r16Hl1T5SeK0j2h416MZw8pS1JQm6lEAXa5yvHa+S+N+zP40friurYGSOGs8Nw2/urrRdVJCxwZEX3OYvuyyK0yI5hYE8ATGbfJfG/Zn8aP1wKuzOMAJMssP50fqiF9Ci/GHd6qz+s6j8u7v/AEqTsGl8Sk8EqPsb4xpcY9o7BzJy6JQdTOzgWHMkcY6fyWxv2Z/HL/VEutp2SS3dIG4ZH9wq/RlZLDBqsiLhc4i/kD4rToUZj8lsb9mfxy/1Qvktjfsz+OX+qIn0KL8Ye+1WH1nP+Xd3/pS7a/XV/c/tEabGOY7CLlLMuYGWGcODmHFwY63yXxv2Z/HL/VEuopmPjjBkAsMDvy6VXUdZLHNM5sRcXG5A+7ngcD5ZLToUZh8lsb9mf+RH6ob5K437M/8AIj9URPoUX4w99qsPrOo/LO7/ANK9f+IiP8yg8ZY9ilfnF60Yp5Ms8ZaT/wBojKdJ6PmyFBM4MSHAcGztuJj2yOzeLWlKkyyUqAI20CxFvS4RLmp43wxtMgAF7Hf3qBTVkrKmV7YXEutcY3HXh5BapCjMPkrjfsz/AMiP1Qvkrjfsz/yI/VEX6DF+MPfap/1nUflnd/6V6f8AEKW2ISf4kD2FQ/KKqY92lNHzZCgmcllEOLg2dtxMeGLmmaGxNAN+neszWvL6h7i0tJOR2eCUWDsfOKZiynxUgj8QBt0VFfMd7sdOCJxUXYJ3c7fGPiuF6d/V5hdtFH/3I+vyKveEQJoKptyCwfZs3JojlzlKXq1fRuQzNYO189wh58o4hlIYACnatz3PxiReICk6gPU1N8nHwtGXW6Q4v5ptTZ3qbayZs3bMwYkJKNYR841TufEA4tlnuaBw/wDl3rvVlTfLi7cYjVhiVa+1L182F8uNoIiwajNJE24Fw+z7miOfiFy1FEuyBlZ87m7cSYlxC+8AJRYpuarctzwcjFpkpEtT1JzbK9/jBEsTh0yE6xDuLXvnA4WUMQCteYNNrWz+MRYWQqSquZZOWb59IPFyzONUu4AY7r57+ogiaXiStepLUuU2zs7X8oLFK7uwR6Wb3y/eDmz0rRqk+NgPMZ38oHBq1DiZarLfl06wRF3ZNGvvW1fJ2fLhHlJ7wCF5Jya2cSahVet9B6nfdnl0htKHXpAl3pud2fWCDNZgzWMKPRjpRRMUk5g+7/1HnjXNdrNB3+i/O3s1HFu4kcCvRo6bRNlr/hUFeogxscYmY1vQWL1uHlTN5Sx6ix9oip0qzmu6x5haDQEmL4+o+R8l0YBSXBHEQcKKdaRZl2JVTi0pO8KHmEk/CNNjMcH8zpEDhOKfIkgewxp0WOk8ZGu3tCptCfDC+M/dcR4JQoUMYrlcrMu2v11f3P7RGnRmPbX66v7n9qY02LGt+xh6vRUujP4mp/qH+SeFChRXK6Wb/wCIa3xAHCWn+5R/KL9gEUykJ4ISPUkRnPac63HKTxUlA/7R7yY08CLGs+GCFnRfjZUujfjqqiTZcDhdPChQxiuV0s17fzasS38CUp96v/IRWo92msXrZ82ZuUS3QWHsAjxRrKdmpE1p2AL8+rJeVne8bSeGzuSjvdjZIXPKTkRf2H4RwIsvY+TVrAPEaW8iSb+qONebU7uHeFJ0Q3WrGdp/tKuOImnDslGRD3vfL4RKuQlKNcHqark5zt5w2EmCSCmZYkuN9st0RS5Ckr1p8DlTvuLtbzjMrcI8L/mH1no5NbPP3QBxJC9Rah6ObG2fG8FjPn21V6XfdmzZ9DEoxCQjVPt0078yGz6wRBiUDDgFGarF7wUjCpmpExT1Kza2VvhAYNJkkmZYGw3+6I5+GVNUVouk5XbK2XUQRFKxJnnVqAAN3GdusPNnHDmhNwdra9W7pEmImIWlpTV/yhi2+9obCqSgETvE7iraLMN97O8ETKwwljXAkq8THLa/eGkp7xdVqbCnn1fhAypawupb6tyblwxdreqHxbrbUZDxU7PR8ngibvRfUMKXofe2T8Hh8Unu4dN6rGrl0bjEmsRRTbWs2V6m48X3vAYQFD67I+Gra6tm0EVB7SSzrBMP+pf8JpIHkAfOOTFt7XYNSnmpDoTkRkzAKYbrh/KKlGj0fJrwDeMPTuWL0vByVU47HYjtz70oun+H2kWrw6j/ADI9yh7j64pkFKmKQQpKilQyILEdCI7VMImjLFFo6k00wkHaN4W0w0ZdhZuPmJqQqepPEKWR74m1ekv9/wBa4qPq7fI1aQaZuLiF/BP21kmXiysekErHUW96fbGiYScJiELGSgFDzDxlmk8Ni2rnpWwtUqqz7nOV4LR83GrS0kzClNmTUyeTDKJU1LykTBrj4cL7PeSr6av5CokPJus/EC2I34cVrENGZ0aS/wB/1rhUaS/3/WuIv1d/uN4qx+tz+BJwTdtfrq/uf2iNOjHMeJtZ11Wss9TvlbO+UdYy9Jf7/rX+cS6ik142N1wLDjlkq+jr+SmmdybjrG9gMRnmtNgJiwAScgHMZrq9J/7/AK1R5sdNxyE/OqnJSrZvWAXBtc3tEQaNvhyjVPOmdUXML+0YKfs4DPxyVnepUw8s1D/uIjThGR6Mw2JLrkJmcCpNXIs48o9+r0nwn+tcSqul5V4s9oAFrEqDo6tMERvG9xcda4GButOjhdrtI6nDKY7S9lPnmfIP7IpikaSAc94A6rjj4rGzJjayYVtk6iWfg8codG/GCXggZ2Xaq0yeTLRG5pIsCcF54UKFF4sukIvXZfCaqQJ/pG7HJiWHsY+cUmRLqUlLtUwfg5z8hfyjR9EYVUptYCJYDXLjJhaKfSslmtj348Pn4LRaAgu98p2YDtxPlxXvlShiBUqxGzs+vf1iMYkrVqCBS9LjO37QsUkrLyXpAY0mm/s3NEq1oKKUtrWawu4zvxz3xSLUIJ3+Wai9WdXLgzcYLuwKde5qattzi7cWtA4TYfX7/DVtdWzbdAKQuusPqnfO1O+z5NuaCI5K+8bKrU3FP/t4GbizJOrSAQnec733dYkxRCwBJzGdOzb2Q8iahKQma1YzcOeV+jQRCcLqPnHqazZZ84ZMnvO2TS2y2fN93GAwpXV889H8+T7s4fF1P8w9LXoyfy3s0ET951nzDN6NT/w728odSu7WG1VfgzevjEk2ijYp1rbmqffzfOAwjX1+fo1+1n8oIl3W2vf+en2s8IK7zY7NN+Lv6uERuuvfqn+7T7maJMW1tRn6VHsdoIvHpBdIMimoeF+NV8vOM/0hhDJmKln0TY8eB/8At4MadLSgo26daxzap93N8opvaHR0wjWKqBSPS9IPcB9+ZHQ8YnUFRyUljkcPRVelqM1EN285uI6RtHp02VbhPAPBRoli12ezWnDhpl3MtXjHD+Ycx7Y0yROStIWkhSSHBGREY1HZ7P8AaGZhi3ilk3Rw5jgff7Yra2h5X42c7x+au9F6U5D/AEpeZsO75LRtKYQTpS5R9IN0OYPkWMUHsdjTIxRlrsF7BHAvs+1x96L7o3SUvEIrlqBG8b0ngobopHbvRmrmiemyZmbblD3OA/kYhUNiXU78NbuI99ys9KAgR1kWOodm1p927VosNHI7N6U7zISs+IWWOY39CLx1zEB7Cxxa7MK3jkbI0PbkcQsx7bfXF/c/sEafGYdtfrq/uf2CNOiwrfsYer0VToz+Jqf6v1J4znt7pDWThKTcShdt5VmObBh5mLppzSQw8lUw55JHFRyHx6AxRux2jziMRrV3CDWon0lEuB67+XOPKBoYHTuybl1+/FNLSOlLaRmbjj0Ae79ivGgcBqJEuXvAdXU3Ptt5R0jEU+alCSpSglIzJLARQ+0na0zHlSCQjIryKuSeA55xGihkqHkjtOz34qZPVQ0UQDtgsBtNveZU3bLtGC+Hkm2UxQ3/AMg5cfVxilwoUaSngZCzVb+6xlXVSVMnKP7BsA3e80oUKJsJIMxaUAgFRzOQ4k//AHCOrnBo1jkFwYxz3BrRcnJd7snobXPMJYAsmzud5+Hri5y8Trhqmpfe75XyjnYXCqlgJkVUADw3D73IzPGOtiaKfmqa91LPzyjKVExmkL+HUt9R0wpoRENmfSdvvcozN7tsAVPtPlybfwhd1o+fd/Sp67n84fCUsde1T2rzZtz7neI5ZXXtPqnOfhpu3Jso4qSpEjvOezR5u/q4QxxTfMN/JU/Gzt5wsZu1HOqjyZ284kFFF6da3Kqprc3eCKNSO7bQ2qrcG384YYLX/O1U1bmdmtn5Q+Edzr8t1fHk8RzzMqOqqo3U5c2bm8EUqsTr/mwKXu+eUJE7u+wRU+04tyb2QWIloQmqU1fIuW32vDYVCZgJneIFg+za24NvJgiAYXVnXu48VP8AVufzh1p7zcbNNr3d/wBoCXMWpdC31bkXDBg7XbkN8Hi3ltqcj4m2umbtBE/erahr+Cr2O0MhPdrnaqtazN+8HqkUV21rVZ3qbhxfc0BhCZjidkMn2euTPBEjhdYdcCwN2/ptn5RFiiMUKAKSNpzfk3tgpsxaV0IfVuBYOGLPduZ3xLikJlgGT4nYttWY7i+8CCLO9P6LOHWd6Tc8id3T4+zmRpszAInIeaAVFwarW6WjPdIaOXKL0mjix2eR5c4uqGtBAjkOOw7+j31deY0tosgmeEYZuG7pA3b92e+3jhPChRbrOqfCYpcpQXLWUqG8H2HiORixHtSmfKVJxKMxaYlnB3Kp5HgfKKtCjjJAySxcMRkdo7VJgq5YQQw4HMHEHs9LFdfs3pc4adU7oVZYD3G4jmM/WI1KVMCgFJIIIcEbwd8YtE8jFrl+Bak9CR7jEWroROQ4Gx8VO0dpU0reTcLt2dG/sO7Bdjtr9dX9z+xMaatTXOQjFp89S1VLUVK4kkm3MxNP0lNWGXNWoHcVEj1Ex5PQukYxusBqj09F0pdKsgkleWk65uMevPjsXU7V6a7zNZJ+bRZPPio9d3LrHSwnaSThJIlSEGYvNSjsgqOZ4nhusBFOhRIdRxuY1h5o2b+tQm6QmbI6UW1nbd3QL4dGRwXQ0ppidiC8xbjckWA6D4m8c+FCiQxgYLNFgob5HSO1nm53lKFCgkhyBmTYDieEfRNl8gXNgkA7AAkmwA38hFu7M6ICk05LO0pWYYWCBy2vO/KPNoTQ60LCiHOVg4AOYB47iRz87jOkJlJBk+J2LbVuhfeBGfrq3lTqM5vj8lr9FaM5AcrJzz3D1PdklLxAw41ZFW9xbP8AaGThTI+dJqA3M2dokwyEzE1TfFlc0lt1rRDh1rWqma9G9wwtldhFarpEqV3nbBpbZY35/GC7zWNQzHw1dN7eUBilGWQJPhIcsKr+b7olXKQEVpbWM+d3OdvXugiBJ7tntV8LM37wjhX+fe3jpbhdn8ofB/OPrt3hfZzzyZ8hEapiwugPqnbK1O+7ZNveCI1L7zsjZpve/KHGNEj5oh6d+Tvf4wsUkSwDJzObbVvN2gsPKQpIVNas5uWPK1tzQRRScMZB1imIFtnO/VoedKOINaLAbO1m+e57XgcLiFTlULunO1soWLmmQaJdgRVe98vhBFKrECYnUgGrwuWbZ833cIGQruzhd6rinlxduMHMw4QjWp8bA8nOdvOBwY17mZenJrZ/tBEHdTVr7UvW29s24P5wU9XeGCLU3NXPgz8IDvCq9T6D0c2yzg8YnUAGXaqxe+UERS8QJadSQSoWcM21fi+/hEcmScOa13BFOzm+e9uESycOlaNarx3PK2VvKIsJNM80TLgCq1r2HxMESn4UzzrEsBltZ26PEOkAnEgy0ggm+0zW6PEmKxCpKqEWSz3vnE+Jw6ZKa0eIWvfOCLP9M6AVJOzc50jJv5SWY8suYjjnNiCCMwbEeUanIwqcSkqmByDTa1s/jHAx2jBOmCWpIIBIBFlAB8lC+6LKm0i+P4X4jv8An7xVJW6FjmJfF8Lt2w+nZwVLhR09L6DXJIY1A9AQ3sPsjlrTS1QpfKoEP0fPyi4hqIpeY7s28Fm6iinpz/qNNt+Y4pPAwoUSAoieGh4aPUTw0KES2do8RKFHok4SYsVJQoj+IWHrOfk8dvQPZvWuZhJZrJJGfE5nLlEWathizNzuCsabRlTPk2w3nAep4Lh4XCLmPQlwM1bh1O88heLVoXQCVDZusXUpVrcEgOw/+cx1MLh6FiSAAh6GbcbR08VLGHAMu1Vi94o6mtfNhk3d6+7dC09FoyKl+LN2/wBBs8elNhpqZKdSQahZwzbVxmX3w0iScOa1sQRTs5ub724RLIkJmI1qvEXPKxYW8ohwk4zzRMuAKrWvYfGIask87DmedYhgGbazt0eJZuKE4atIIJ4s1r7iYhxeIMlVCLBnvfOJsTh0yk6xHiDZ3ztBE0iaMOKV3J2tn1b24RGMOUK15al6mGbH2PfjB4OWJ4KplyCwa1s/jEcvEKUvUnwOUtvYO1/KCI547y1Fqc6ufBn4QQxICdQxqah7M5txdr8IHGHUNq7VO73yZveYPu6SjXenTXycB8oIgkI7vtLvVYU+ve0DMwipxMxJACsgc7W3Pwh8IvXkiZcJuGtAT8WqUoy0MEpyfmH+MEU+JxCZyaEZ53tlDYSaJAKJmZNVr2YD4R5dD/SjoYPTvjH9PxMERSsMUL1ympcnmxdrecFjE94Yy705vbP9o9eN+gP9I+EefQOS+o+MERd4TRqfTajk7NnEWDT3dzM9Kwa+X7xB/wDo+/8AGPVp3JHUwRRTcMZi9clqXB52Z7eUS4qYJ4CEZg1Xta4+MT4D6AdFe8x4dB/SH+k+8QRejDYhMlNC887XziDDYZUlWsW1Ita+cR6a+k8hHS0z9Eeo98EXjxcozzVLyApva+fxiWZPStGpHiank4zv5Qeg/Af6vgI8OD+sfeV8YIjkSEyQRM9LJr5fvHOxOhKlGawMsmq/DPKOtp7NHn8I9Q+r/wDT/wDGCKm4rs5Km/QopIzzSPULeyOfM7OBOyVqC+DJI5XYcou2gc1dBHl0gPnz/Un3CO7amZuTzx9VFkoqeQ3dG09npZU6Z2amouuYlIytLqvw8QgpXZiYu6FAjjQ3scxfdOoGrFvSHuVB6FQNXlvMdPp1R/P4ei4jRVGP/mO/1VGldm0L2UqWpXNgOeQEdXR+g5Uj6RG1mC1Rbqbi4jq6G+lHQ+6JtOeNP9PxMcXzyv5zie1SY6WGLmMA7AvJhtE6teuUBS5VzY5W849uJlie2r9F3e2f7R68X9X+6PhHn0Dkvy+Mcl3RDEJCNT6bUcnIbOI8Iju5JmZKsGvlEC/rH3x749enfCnr8IIoZ2GMxetS1JIN87MDbyiXFTRPFCMwar2tl8Yn0d9AOiveY8Og/pD/AEn3iCL0YaemQmheedr5xBh8MqSrWLakcL52gNNfSfdHxjo6X+iPl7xBF48XKM81S8gGL2vn8YlmT0qRqR42p5OM7+UFoLwK/q+AjxYb6x99Xxgi9GE/y76z0smvln74BWGJXrrUOF82F8oPT/oefwj0y/q//TPuMEXnxShiABLzTcvaDw2KTJSJa3qTmwfO/wAYg0F4ldB748+lvpVeX9ogi//Z">
+    <link rel="apple-touch-icon" href="data:image/jpeg;base64,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">
+</head>
+
+<body class="stiky">
+    <header class="navigation">
+        <a href="#">
+            <img class="logo" src="https://omnifood.dev/img/omnifood-logo.png" alt="logo of omnifood" />
+        </a>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link" href="#section-how">How it works</a></li>
+                <li><a class="main-nav-link" href="#meals">Meals</a></li>
+                <li><a class="main-nav-link" href="#section-testimonials">Testimonials</a></li>
+                <li><a class="main-nav-link" href="#section-pricing">Pricing</a></li>
+                <li><a class="main-nav-link btn-nav" href="#">Try for free</a></li>
+            </ul>
+
+        </nav>
+        <button class="mobile-nav-icon">
+            <ion-icon class="nav-icon" name="menu-outline"></ion-icon>
+            <ion-icon class="nav-icon" name="close-outline"></ion-icon>
+        </button>
+        
+    </header>
+    <main>
+        <section class="section-hero">
+            <div class="hero">
+                <div class="hero-text-box">
+                    <h1 class="heading-primary">
+                        A healthy meal delivered to your door, every single day
+                    </h1>
+                    <p class="hero-description">
+                        The smart 365-days-per-year food subscription that will make you
+                        eat healthy again. Tailored to your personal tastes and
+                        nutritional needs.
+                    </p>
+                    <a href="#cta" class="btn btn--full margin-right">Start eating well</a>
+                    <a href="#section-how" class="btn btn--outline">Learn more&Darr;</a>
+                    <div class="delivered-meals">
+                        <div class="delivered-meals-imgs">
+                            <img src="https://omnifood.dev/img/customers/customer-1.jpg" alt="Customer photo" />
+                            <img src="https://omnifood.dev/img/customers/customer-2.jpg" alt="Customer photo" />
+                            <img src="https://omnifood.dev/img/customers/customer-3.jpg" alt="Customer photo" />
+                            <img src="https://omnifood.dev/img/customers/customer-4.jpg" alt="Customer photo" />
+                            <img src="https://omnifood.dev/img/customers/customer-5.jpg" alt="Customer photo" />
+                            <img src="https://omnifood.dev/img/customers/customer-6.jpg" alt="Customer photo" />
+                        </div>
+                        <p class="delivered-meals-text">
+                            <span>250,000+</span> meals delivered last year!
+                        </p>
+                    </div>
+                </div>
+                <div class="hero-img-box">
+                    <img src="https://omnifood.dev/img/hero.webp" class="hero-img" />
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-featured container">
+                <h2 class="heading-featured-in">AS FEATURED IN</h2>
+                <div class="logos">
+                    <img src="https://omnifood.dev/img/logos/techcrunch.png" alt="Tech crunch logo">
+                    <img src="https://omnifood.dev/img/logos/business-insider.png" alt="Business insider logo">
+                    <img src="https://omnifood.dev/img/logos/the-new-york-times.png" alt="The new york times logo">
+                    <img src="https://omnifood.dev/img/logos/forbes.png" alt="Forbs logo">
+                    <img src="https://omnifood.dev/img/logos/usa-today.png" alt="Usa today logo">
+                </div>
+            </div>
+        </section>
+
+        <section id="section-how" class="section-how">
+            <div class="container">
+                <span class="subheading">How it works</span>
+                <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
+            </div>
+
+            <div class="container grid grid--2--cols grid-v-center">
+
+                <!-- 01 -->
+                <div class="text-box">
+                    <p class="step-number">01</p>
+                    <h3 class="heading-tertiary">Tell us what you like (and what not)</h3>
+                    <p class="step-description">
+                        Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized
+                        weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no
+                        matter what diet you follow!
+                    </p>
+                </div>
+                <div class="img-box img-box-1">
+                    <img class="step-img" alt="iphone app deliverey screen"
+                        src="https://omnifood.dev/img/app/app-screen-1.png">
+                </div>
+
+                <!-- 02 -->
+                <div class="img-box img-box-2">
+                    <img class="step-img" alt="iphone app deliverey screen"
+                        src="https://omnifood.dev/img/app/app-screen-1.png">
+                </div>
+                <div class="text-box">
+                    <p class="step-number">02</p>
+                    <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
+                    <p class="step-description">
+                        Once per week, approve the meal plan generated for you by Omnifood AI. You can change
+                        ingredients, swap entire meals, or even add your own recipes.
+                    </p>
+                </div>
+
+                <!-- 03 -->
+                <div class="text-box">
+                    <p class="step-number">03</p>
+                    <h3 class="heading-tertiary">Receive meals at convenient time</h3>
+                    <p class="step-description">
+                        Best chefs in town will cook your selected meal every day, and we will deliver it to your door
+                        whenever works best for you. You can change delivery schedule and address daily!
+                    </p>
+                </div>
+                <div class="img-box img-box-3">
+                    <img class="step-img" alt="iphone app deliverey screen"
+                        src="https://omnifood.dev/img/app/app-screen-1.png">
+                </div>
+            </div>
+        </section>
+
+        <section id="meals" class="meals">
+            <div class="container">
+                <span class="subheading-meals subheading">MEALS</span>
+                <h2 class="heading-secondary heading-secondary-meals">Omnifood AI chooses from 5,000+ recipes</h2>
+            </div>
+
+            <div class="grid container meales">
+                <div class="meal meal-a">
+                    <img clss="meal-img" width="100%" src="https://omnifood.dev/img/meals/meal-1.jpg" alt="Japanese Gyozas meal">
+                    <div class="meal-content">
+                        <div class="meal-tag">
+                            <span class="tag tag--vegitarian">VEGETARIAN</span>
+                        </div>
+                        <p class="meal-title">Japanese Gyozas</p>
+                        <ul class="meal-attributes">
+                            
+                            <li class="meal-attribute"><ion-icon class="meal-icon" name="flame-outline"></ion-icon><span><strong>650</strong> calories</span></li>
+                            <li class="meal-attribute"><ion-icon class="meal-icon" name="restaurant-outline"></ion-icon><span>NutriScore ® <strong>74</strong></span></li>
+                            <li class="meal-attribute"><ion-icon class="meal-icon" name="star-outline"></ion-icon><span><Strong>4.9</Strong> rating (537)</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="meal meal-b">
+                    <img clss="meal-img" width="100%"src="https://omnifood.dev/img/meals/meal-2.jpg" alt="Avocado Salad meal">
+                    <div class="meal-content">
+                        <div class="meal-tag">
+                            <span class="tag tag--vegan">VEGAN</span>
+                            <span class="tag tag--paleo">PALEO</span>
+                        </div>
+                        <p class="meal-title">Avocado Salad</p>
+                        <ul class="meal-attributes">
+                            <li class="meal-attribute"><ion-icon class="meal-icon" name="flame-outline"></ion-icon><span><strong>400</strong> calories</span></li>
+                            <li class="meal-attribute"><ion-icon class="meal-icon" name="restaurant-outline"></ion-icon><span>NutriScore ® <strong>92</strong></span></li>
+                            <li class="meal-attribute"><ion-icon class="meal-icon" name="star-outline"></ion-icon><span><strong>4.8</strong> rating (441)</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list-i">
+                    <h3 class="heading-tertiary">Works with any diet:</h3>
+                    <ul class="list">
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Vegetarian</span></li>
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Vegan</span></li>
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Pescatarian</span></li>
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Gluten-free</span></li>
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Lactose-free</span></li>
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Keto</span></li>
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Paleo</span></li>
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Low FODMAP</span></li>
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Kid-friendly</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container all-recipes">
+                <a href="#" class="recip-link">see all recipes &rArr;</a>
+            </div>
+        </section>
+
+        <section id="section-testimonials" class="section-testimonials">
+            <div class="testimonial-container">
+                <span class="subheading">TESTIMONIALS</span>
+                <h2 class="heading-secondary">Once you try it, you can't go back</h2>
+                <div class="testimonials">
+                    <figure class="testimonial">
+                        <img class="testimonial-img" src="https://omnifood.dev/img/customers/dave.jpg" alt="custoer Dave Bryson">
+                        <blockquote class="testimonial-text">
+                            Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.
+                        </blockquote>
+                        <p class="testimonial-name">&mdash; Dave Bryson</p>
+                    </figure>
+
+                    <figure class="testimonial">
+                        <img class="testimonial-img" src="https://omnifood.dev/img/customers/ben.jpg" alt="custoer Ben Hadley">
+                        <blockquote class="testimonial-text">
+                            The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry about food anymore!
+                        </blockquote>
+                        <p class="testimonial-name">&mdash; Ben Hadley</p>
+                    </figure>
+
+                    <figure class="testimonial">
+                        <img class="testimonial-img" src="https://omnifood.dev/img/customers/steve.jpg" alt="custoer Steve Miller">
+                        <blockquote class="testimonial-text">
+                            Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now!
+                        </blockquote>
+                        <p class="testimonial-name">&mdash; Steve Miller</p>
+                    </figure>
+
+                    <figure class="testimonial">
+                        <img class="testimonial-img" src="https://omnifood.dev/img/customers/hannah.jpg" alt="custoer Hannah Smith">
+                        <blockquote class="testimonial-text">
+                            I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and without plastic.
+                        </blockquote>
+                        <p class="testimonial-name">&mdash; Hannah Smith</p>
+                    </figure>
+                </div>
+            </div>
+            <div class="gallary">
+                <figure class="item-gallary">
+                    <img src="https://omnifood.dev/img/gallery/gallery-1.jpg" alt="photo beautiful arranged food">
+                </figure>
+                <figure class="item-gallary">
+                    <img src="https://omnifood.dev/img/gallery/gallery-2.jpg" alt="photo beautiful arranged food">
+                </figure>
+                <figure class="item-gallary">
+                    <img src="https://omnifood.dev/img/gallery/gallery-3.jpg" alt="photo beautiful arranged food">
+                </figure>
+                <figure class="item-gallary">
+                    <img src="https://omnifood.dev/img/gallery/gallery-4.jpg" alt="photo beautiful arranged food">
+                </figure>
+                <figure class="item-gallary">
+                    <img src="https://omnifood.dev/img/gallery/gallery-5.jpg" alt="photo beautiful arranged food">
+                </figure>
+                <figure class="item-gallary">
+                    <img src="https://omnifood.dev/img/gallery/gallery-6.jpg" alt="photo beautiful arranged food">
+                </figure>
+                <figure class="item-gallary">
+                    <img src="https://omnifood.dev/img/gallery/gallery-7.jpg" alt="photo beautiful arranged food">
+                </figure>
+                <figure class="item-gallary">
+                    <img src="https://omnifood.dev/img/gallery/gallery-8.jpg" alt="photo beautiful arranged food">
+                </figure>
+                <figure class="item-gallary">
+                    <img src="https://omnifood.dev/img/gallery/gallery-9.jpg" alt="photo beautiful arranged food">
+                </figure>
+                <figure class="item-gallary">
+                    <img src="https://omnifood.dev/img/gallery/gallery-10.jpg" alt="photo beautiful arranged food">
+                </figure>
+                <figure class="item-gallary">
+                    <img src="https://omnifood.dev/img/gallery/gallery-11.jpg" alt="photo beautiful arranged food">
+                </figure>
+                <figure class="item-gallary">
+                    <img src="https://omnifood.dev/img/gallery/gallery-12.jpg" alt="photo beautiful arranged food">
+                </figure>
+            </div>
+        </section>
+        <section id="section-pricing" class="section-pricing">
+            <div class="container">
+                <span class="subheading">Pricing</span>
+                <h2 class="heading-secondary">Eating well without breaking the bank</h2>
+            </div>
+
+            <div class="container grid grid--2--cols padding--bottom">
+                <div class="pricing-plan pricing-plan--stater">
+                    <div class="plan-header">                        
+                        <p class="plan-name">Stater</p>
+                        <p class="plan-price"><span>$</span>300</p>
+                        <p class="plan-text">per month. That's just $13 per meal!</p>
+                    </div>
+                    <ul class="list margin-bottom"> 
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>1 meal per day</span></li>
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Order from 11am to 9pm</span></li>
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Delivery is free</span></li>
+                        <li class="list-item"><ion-icon class="list-icon" name="close-outline"></ion-icon><span></span></li>
+                    </ul>
+                    <div class="plan-signup">
+                        <a href="#" class="btn btn--full">Start eating well</a>
+                    </div>
+                </div>
+
+                <div class="pricing-plan pricing-plan--complete">
+                    <div class="plan-header">
+                        <p class="plan-name">COMPLETE</p>
+                        <p class="plan-price"><span>$</span>649</p>
+                        <p class="plan-text">per month. That's just $11 per meal!</p>
+                    </div>
+                    <ul class="list margin-bottom"> 
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>2 meal per day</span></li>
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Order 24/7</span></li>
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Delivery is free</span></li>
+                        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Get access to latest recipes</span></li>
+                    </ul>
+                    <div class="plan-signup">
+                        <a href="#" class="btn btn--full">Start eating well</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container grid plan-detail">
+               <div class="plan-details">
+                <aside>
+                    Prices include all applicable taxes. You can cancel at any time. Both plans include the following:
+                </aside>
+               </div> 
+            </div>
+            <div class="container grid grid--4--cols">
+                <div class="feature">
+                    <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+                    <p class="feature-title">Never cook again!</p>
+                    <p class="feature-text">Our subscriptions cover 365 days per year, even including major holidays.</p>
+                </div>
+                <div class="feature">
+                    <ion-icon name="nutrition-outline"></ion-icon>
+                    <p class="feature-title">Local and organic</p>
+                    <p class="feature-text">Our cooks only use local, fresh, and organic products to prepare your meals.</p>
+                </div>
+                <div class="feature">
+                    <ion-icon name="leaf-outline"></ion-icon>
+                    <p class="feature-title">No waste</p>
+                    <p class="feature-text">All our partners only use reusable containers to package all your meals.</p>
+                </div>
+                <div class="feature">
+                    <ion-icon name="pause-outline"></ion-icon>
+                    <p class="feature-title">Pause anytime</p>
+                    <p class="feature-text">Going on vacation? Just pause your subscription, and we refund unused days.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="section-cta">
+            <div class="container">
+                <div class="cta">
+                    <div class="cta-text-box">
+                        <div class="text-box">
+                            <div class="heading-secondary">
+                                Get your first meal for free!
+                            </div>
+                            <div class="cta-text">
+                                Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!
+                            </div>
+                        </div>
+                        <form class="cta-form" action="#">
+                            <div>
+                                <label for="full-name">Full Name</label>
+                                <input id="full-name" type="text" placeholder="Your name">
+                            </div>
+                             
+                            <div>
+                                <label for="email">Email</label>
+                                <input id="email" type="email" placeholder="me@example.com">
+                            </div>
+
+                            <div>
+                            <label for="select-where">
+                                Where did you hear from us?
+                            </label>
+                            <select id="select-where">
+                                <option vlaue="">Please choose one option:</option>
+                                <option value="Friends">Friends and family</option>
+                                <option value="Youtube">YouTube video</option>
+                                <option value="Podcast">Podcast</option>
+                                <option value="Facebook">Facebook ad</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            </div>
+                            
+                            <button>Sign Up Now</button>
+                        </form>
+                    </div>
+                    <div class="cta-img-box" role="img" aria-label="Woman enjoying food"></div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="footer-section">
+            <div class="container grid grid--5--cols grid-footer">
+                <div class="logo-col">
+                    <a href="#">
+                        <img class="logo-f logo" src="https://omnifood.dev/img/omnifood-logo.png" alt="logo of omnifood" />
+                    </a>
+                    <p class="social-links">
+                        <ul class="social">
+                            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        </ul>
+                    </p>
+                    <p class="copy-right">
+                        Copyright &copy; <span class="year">20</span> by Omnifood, Inc. All rights reserved.
+                    </p>
+                </div>
+                <div class="address-col">
+                    <p class="footer-heading">
+                        Contact us
+                    </p>
+                    <address>
+                        623 Harrison St., 2nd Floor, San Francisco, CA 94107
+                    </address>
+                    <p class="email-phon">
+                        <a class="footer-link" href="tel:415-201-6370">415-201-6370</a>
+                        <a class="footer-link" href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+                    </p>
+                </div>
+                <div class="nav-col">
+                    <p class="footer-heading">
+                        Account
+                    </p>
+                    <ul class="list">
+                        <li  class="f-item" ><a href="#">Creat Account</a></li>
+                        <li  class="f-item" ><a href="#">Sign up</a></li>
+                        <li  class="f-item" ><a href="#">iOS app</a></li>
+                        <li  class="f-item" ><a href="#">Andorid app</a></li>
+                    </ul>
+                </div>
+                <div class="nav-col">
+                    <p class="footer-heading">
+                        Company
+                    </p>
+                    <ul class="list">
+                        <li  class="f-item" ><a href="#">About Omnifood</a></li>
+                        <li  class="f-item" ><a href="#">For Business</a></li>
+                        <li  class="f-item" ><a href="#">Cooking partners</a></li>
+                        <li  class="f-item" ><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="nav-col">
+                    <p class="footer-heading">
+                        Resources
+                    </p>
+                    <ul class="list">
+                        <li class="f-item"><a href="#">Recipe directory</a></li>
+                        <li class="f-item"><a href="#">Help center</a></li>
+                        <li class="f-item"><a href="#">Privacy & terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/srk.js"></script>
+</body>
+
+</html>
